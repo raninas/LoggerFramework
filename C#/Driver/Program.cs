@@ -1,4 +1,4 @@
-﻿using Logger253;
+﻿using Logger.Core;
 using System.Threading;
 
 namespace Logger
@@ -7,16 +7,10 @@ namespace Logger
     {
         static void Main(string[] args)
         {
-            Log("Program Started", ".\\log.txt");
-
+            ILogger allLogger = new AllLogger(".\\log.txt");
+            allLogger.Log("Program Started");
             Thread.Sleep(3000); //Simulating work by having the program sleep for 3 seconds
-
-            Log("Program Ended", ".\\log.txt");
-        }
-        static void Log(string msg, string fileName)
-        {
-            ConsoleLogger.Log(msg);
-            FileLogger.Log(fileName, msg);
+            allLogger.Log("Program Ended");
         }
     }
 }

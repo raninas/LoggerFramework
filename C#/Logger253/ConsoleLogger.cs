@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Logger.Core;
+using System;
 
 namespace Logger
 {
-    public class ConsoleLogger
+    public class ConsoleLogger : BaseLogger
     {
-        public static void Log(string msg)
+        protected override void SubClassLog(string msg)
         {
-            Console.WriteLine($"{DateTime.Now} {msg}");
+            Console.WriteLine(msg);
         }
     }
 }

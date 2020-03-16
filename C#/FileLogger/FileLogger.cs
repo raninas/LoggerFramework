@@ -1,13 +1,18 @@
-﻿using System;
+﻿using Logger.Core;
 using System.IO;
 
-namespace Logger253
+namespace Logger
 {
-    public class FileLogger
+    public class FileLogger : BaseLogger
     {
-        public static void Log(string fileName, string msg)
+        string fileName;
+        public FileLogger(string fileName)
         {
-            File.AppendAllText(fileName, $"{DateTime.Now} {msg}\n");
+            this.fileName = fileName;
+        }
+        protected override void SubClassLog(string msg)
+        {
+            File.AppendAllText(fileName, msg);
         }
     }
 }

@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleLogger", "Logger253\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLogger", "FileLogger\FileLogger.csproj", "{380A7C8E-6CA6-4F90-BB99-58C725E72D5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllLogger", "AllLogger\AllLogger.csproj", "{C62A16D1-CB77-4D2F-AB78-422A0C3F2263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerCore", "Logger.Core\LoggerCore.csproj", "{73CE35CB-CD21-4524-8E11-44AFEE28C503}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{380A7C8E-6CA6-4F90-BB99-58C725E72D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{380A7C8E-6CA6-4F90-BB99-58C725E72D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{380A7C8E-6CA6-4F90-BB99-58C725E72D5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62A16D1-CB77-4D2F-AB78-422A0C3F2263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62A16D1-CB77-4D2F-AB78-422A0C3F2263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62A16D1-CB77-4D2F-AB78-422A0C3F2263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62A16D1-CB77-4D2F-AB78-422A0C3F2263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73CE35CB-CD21-4524-8E11-44AFEE28C503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CE35CB-CD21-4524-8E11-44AFEE28C503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CE35CB-CD21-4524-8E11-44AFEE28C503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CE35CB-CD21-4524-8E11-44AFEE28C503}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
